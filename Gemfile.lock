@@ -1,3 +1,16 @@
+GIT
+  remote: https://github.com/marcelohenriq99/microservice_todo_core.git
+  revision: 10c8efb9ea7d4179173b6a68b3584d8942cbf09d
+  specs:
+    microservice_todo_core (0.1.0)
+      activerecord (= 7.2.1.1)
+      bcrypt (= 3.1.20)
+      enumerate_it (= 4.0.0)
+      jwt (= 2.9.3)
+      pg (= 1.5.8)
+      redis (= 5.3.0)
+      standalone_migrations (= 7.2.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -103,6 +116,8 @@ GEM
     dry-core (1.0.1)
       concurrent-ruby (~> 1.0)
       zeitwerk (~> 2.6)
+    enumerate_it (4.0.0)
+      activesupport (>= 6.0.0)
     erubi (1.13.0)
     globalid (1.2.1)
       activesupport (>= 6.1)
@@ -199,6 +214,10 @@ GEM
     rake (13.2.1)
     rdoc (6.7.0)
       psych (>= 4.0.0)
+    redis (5.3.0)
+      redis-client (>= 0.22.0)
+    redis-client (0.22.2)
+      connection_pool
     regexp_parser (2.9.2)
     reline (0.5.10)
       io-console (~> 0.5)
@@ -248,6 +267,11 @@ GEM
       rubocop-rails
     ruby-progressbar (1.13.0)
     securerandom (0.3.1)
+    standalone_migrations (7.2.0)
+      activerecord (>= 6.0.0, < 8.0)
+      nokogiri (~> 1.14)
+      railties (>= 6.0.0, < 8.0)
+      rake (>= 10.0)
     stringio (3.1.1)
     thor (1.3.2)
     timeout (0.4.1)
@@ -275,6 +299,7 @@ DEPENDENCIES
   bootsnap
   devise
   devise-jwt
+  microservice_todo_core!
   pg (= 1.5.8)
   pry (= 0.14.2)
   puma (= 6.4.3)
