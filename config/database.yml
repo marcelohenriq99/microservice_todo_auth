@@ -1,0 +1,27 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: todo-app-development
+  pool: 5
+  username: postgres
+  password: postgres
+  host: localhost
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: <%= ENV['DATABASE_DB'] %>
+  pool: 5
+  username: <%= ENV['DATABASE_USER'] %>
+  password: <%= ENV['DATABASE_PWD'] %>
+  port: <%= ENV['DATABASE_PORT'] %>
+  host: localhost
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: todo-app-test
+  pool: 5
+  username: postgres
+  password: postgres
+  host: localhost
