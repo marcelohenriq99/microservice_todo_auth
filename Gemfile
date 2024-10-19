@@ -13,6 +13,9 @@ gem "tzinfo-data", platforms: %i[ windows jruby ]
 gem "bootsnap", require: false
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin Ajax possible
 gem "rack-cors"
+# Use devis and jwt for authentication services
+gem "devise"
+gem "devise-jwt"
 
 group :development, :test do
   # Rspec for testing
