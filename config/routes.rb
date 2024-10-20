@@ -6,12 +6,14 @@ Rails.application.routes.draw do
   get "up" => "rails/health#show", as: :rails_health_check
 
   devise_for :users, class_name: "MicroserviceTodoCore::Models::User", controllers: {
-    sessions: "users/sessions"
+    sessions: "users/sessions",
+    registrations: "users/registrations"
   }
 
   devise_scope :user do
-    post   'login',   to: 'users/sessions#create'
-    delete 'logout',  to: 'users/sessions#destroy'
+    post   "signup",   to: "users/registrations#create"
+    post   "login",   to: "users/sessions#create"
+    delete "logout",  to: "users/sessions#destroy"
   end
 
   # Defines the root path route ("/")
