@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/marcelohenriq99/microservice_todo_core.git
-  revision: 10c8efb9ea7d4179173b6a68b3584d8942cbf09d
+  revision: 6be4a4a02960fe49d89d9517b729ffc8c439ab3d
   specs:
     microservice_todo_core (0.1.0)
       activerecord (= 7.2.1.1)
