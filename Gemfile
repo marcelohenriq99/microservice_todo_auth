@@ -26,7 +26,7 @@ group :development, :test do
   # Rspec for testing
   gem "rspec", "3.13.0"
   # Pry for debug
-  gem "pry", "0.14.2"
+  gem "pry", "0.15.0"
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
 end
